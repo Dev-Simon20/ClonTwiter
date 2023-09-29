@@ -5,8 +5,6 @@
     color: #fff;
     font-size: .8rem;
     margin-bottom: 20px;
-  
-
 }
 
 .tw-followCard-header{
@@ -36,6 +34,9 @@
     padding: 6px 16px;
     font-weight: bold;
 
+}
+.tw-followCard-button:hover{
+   background-color: rgb(39, 179, 235);
 }
 
 .tw-followCard-aside{

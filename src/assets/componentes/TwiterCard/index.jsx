@@ -1,6 +1,8 @@
 
+
+
 const TwiterCard=(props)=>{
-  const {nombre,correo}=props
+  const {nombre,correo,isFollow,format}=props
     return <article className="tw-followCard">
     <header  className="tw-followCard-header">
       <img
@@ -10,11 +12,12 @@ const TwiterCard=(props)=>{
       />
       <div className='tw-followCard-info'>
         <strong>{nombre}</strong>
-        <span className='tw-followCard-infoUser' >{correo}</span>
+        <span className='tw-followCard-infoUser' >{format(correo)}</span>
       </div>
     </header>
+
     <aside className="tw-followCard-aside">
-      <button className='tw-followCard-button'>seguir</button>
+      <button className='tw-followCard-button'>Seguir</button>
     </aside>
   </article>
 }
